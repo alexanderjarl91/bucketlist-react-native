@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import {View} from 'react-native';
+import {View, StyleSheet, Modal, Pressable, Text, Button} from 'react-native';
 import Profile from './components/Profile';
 import Bucketlist from './components/Bucketlist';
 import Navbar from './components/Navbar';
@@ -16,7 +16,7 @@ const App = () => {
 
   //NAV STATES (navigate and show menu)
   const [page, setPage] = useState('home');
-  const [menu, showMenu] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   //CONTEXT DECLARATIONS
   const {
@@ -32,10 +32,47 @@ const App = () => {
     handleSignup,
   } = useContext(AuthContext);
 
-  //TOGGLE MENU
-  const toggleMenu = () => {
-    showMenu(!menu);
-  };
+  //modal styles
+  const styles = StyleSheet.create({
+    centeredView: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    modalView: {
+      borderRadius: 20,
+      padding: 50,
+      alignItems: 'center',
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+      elevation: 20,
+    },
+    button: {
+      borderRadius: 20,
+      padding: 20,
+      elevation: 2,
+    },
+    buttonOpen: {
+      backgroundColor: '#F194FF',
+    },
+    buttonClose: {
+      backgroundColor: '#2196F3',
+    },
+    textStyle: {
+      color: 'white',
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    modalText: {
+      marginBottom: 15,
+      textAlign: 'center',
+    },
+  });
 
   return (
     <UsersProvider>
@@ -47,8 +84,28 @@ const App = () => {
             alignItems: 'center',
             backgroundColor: '#FFC4BA',
           }}>
-          <Header setPage={setPage} toggleMenu={toggleMenu} menu={menu} />
-          {menu ? <Menu showMenu={showMenu} /> : null}
+          <Header
+            setPage={setPage}
+            setModalVisible={setModalVisible}
+            modalVisible={modalVisible}
+          />
+
+          {/* MENU MODAL */}
+          <Modal
+            animationType="fade"
+            // transparent={true}
+            presentationStyle="fullScreen"
+            visible={modalVisible}
+            onRequestClose={() => {
+              setModalVisible(!modalVisible);
+            }}>
+            <View style={styles.centeredView}>
+              <Menu
+                modalVisible={modalVisible}
+                setModalVisible={setModalVisible}
+              />
+            </View>
+          </Modal>
           {page === 'home' ? <Bucketlist /> : null}
           {page === 'add' ? <Add setPage={setPage} /> : null}
           {page === 'profile' ? <Profile /> : null}

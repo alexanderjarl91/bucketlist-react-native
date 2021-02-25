@@ -1,14 +1,25 @@
 import React, {useContext, useEffect} from 'react';
-import {Text, View, Image, FlatList, TouchableOpacity} from 'react-native';
+import {
+  Text,
+  View,
+  Image,
+  FlatList,
+  TouchableOpacity,
+  Button,
+} from 'react-native';
+import firestore from '@react-native-firebase/firestore';
 import {AuthContext, UsersContext} from '../context';
 
 const HelloWorldApp = () => {
-  const {users} = useContext(UsersContext);
-  const {user} = useContext(AuthContext);
-
+  const {users, getUsers} = useContext(UsersContext); //firestore data
+  const {user, handleLogout} = useContext(AuthContext); // currently authenticated user
   const currentUser = users.find((x) => x.email === user.email);
 
-  useEffect(() => {}, [currentUser]);
+  //call the getUsers function from useRef hook in context.js to rerender component when user changes
+  useEffect(() => {
+    console.log(getUsers);
+    getUsers.current();
+  }, [getUsers, user]);
 
   const divStyle = {
     backgroundColor: 'rgba(255,255,255,0.5)',
@@ -27,17 +38,28 @@ const HelloWorldApp = () => {
     alignItems: 'center',
   };
 
+  const handleDelete = async (title) => {
+    const userRef = await firestore()
+      .collection('users')
+      .doc(currentUser.email);
+
+    userRef.update({
+      bucketlist: firestore.FieldValue.arrayRemove(title),
+    });
+  };
+
   return (
     <View style={divStyle}>
       <Text style={{fontSize: 20, fontWeight: '500', margin: 20}}>
-        MY BUCKETLIST
+        MY BUCKETLIST :)
       </Text>
 
+      {!currentUser ? <Text>Fetching your data..</Text> : null}
       {currentUser &&
         currentUser.bucketlist.map((item) => {
           return (
             <>
-              <TouchableOpacity>
+              <TouchableOpacity key={item.title}>
                 <View style={listItem}>
                   <Image
                     style={{
@@ -54,40 +76,29 @@ const HelloWorldApp = () => {
                   <Text style={{fontWeight: '400', fontSize: 14}}>
                     {item.deadline}
                   </Text>
+                  <Button
+                    title="X"
+                    onPress={() => {
+                      // console.log(item.indexOf({title: title}));
+                      const index = currentUser.bucketlist.findIndex(
+                        (element) => {
+                          if (element.title === item.title) {
+                            return true;
+                          }
+                        },
+                      );
+                      console.log(currentUser.bucketlist[index].id);
+
+                      const title = item.title;
+                      console.log(title);
+                      handleDelete(title);
+                    }}
+                  />
                 </View>
               </TouchableOpacity>
             </>
           );
         })}
-
-      {/* {current.map((user) => {
-        console.log(user);
-        return user.bucketlist.map((bucketlist) => {
-          return (
-            <TouchableOpacity>
-              {bucketlist.length > 0 ? (
-                <View key={bucketlist.title} style={listItem}>
-                  <Image
-                    style={{
-                      width: 30,
-                      height: 30,
-                      opacity: 0.8,
-                      borderRadius: 20,
-                    }}
-                    source={{uri: bucketlist.image}}
-                  />
-                  <Text style={{fontWeight: '200', fontSize: 20}}>
-                    {bucketlist.title}
-                  </Text>
-                  <Text style={{fontWeight: '400', fontSize: 14}}>
-                    {bucketlist.deadline}
-                  </Text>
-                </View>
-              ) : null}
-            </TouchableOpacity>
-          );
-        });
-      })} */}
     </View>
   );
 };

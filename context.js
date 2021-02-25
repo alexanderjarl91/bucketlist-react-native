@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
 
@@ -48,12 +48,14 @@ export const AuthProvider = ({children}) => {
               ],
             };
             firestore().collection('users').doc(email).set(account);
+            const tempUser = user;
+            setUser(tempUser);
           });
       });
   };
 
   const handleLogin = () => {
-    auth().signInWithEmailAndPassword('alexanderjarl91@gmail.com', 'test123');
+    auth().signInWithEmailAndPassword(email, password);
   };
 
   const handleLogout = () => {
@@ -92,8 +94,13 @@ export const AuthProvider = ({children}) => {
 export const UsersProvider = ({children}) => {
   const [users, setUsers] = useState([]);
 
+  //get users function to update components
+  const getUsers = useRef(() => {});
+
+  // runs on start
   useEffect(() => {
-    const get = async () => {
+    getUsers.current = async () => {
+      console.log('get users running');
       const usersRef = firestore().collection('users');
       const snapshot = await usersRef.get();
       const usersCopy = [];
@@ -103,10 +110,12 @@ export const UsersProvider = ({children}) => {
       });
       setUsers(usersCopy);
     };
-    get();
+    getUsers.current();
   }, []);
 
   return (
-    <UsersContext.Provider value={{users}}>{children}</UsersContext.Provider>
+    <UsersContext.Provider value={{users, setUsers, getUsers}}>
+      {children}
+    </UsersContext.Provider>
   );
 };

@@ -1,7 +1,13 @@
 import React from 'react';
 import {Text, View, Button, TouchableOpacity, Image} from 'react-native';
 
-export default function Header({setPage, toggleMenu, menu}) {
+export default function Header({
+  setPage,
+  toggleMenu,
+  menu,
+  setModalVisible,
+  modalVisible,
+}) {
   const divStyle = menu
     ? {
         position: 'absolute',
@@ -40,8 +46,9 @@ export default function Header({setPage, toggleMenu, menu}) {
 
       <TouchableOpacity
         onPress={() => {
-          toggleMenu();
-          setPage('');
+          // toggleMenu();
+          setModalVisible(!modalVisible);
+          // setPage('');
         }}>
         <Image
           style={{width: 40, height: 40, opacity: 0.7}}

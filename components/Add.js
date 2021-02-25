@@ -10,7 +10,7 @@ const Add = ({setPage}) => {
   const [deadline, setDeadline] = useState('deadline');
   const [image, setImage] = useState('image');
 
-  const {users} = useContext(UsersContext);
+  const {users, setUsers} = useContext(UsersContext);
   const {user} = useContext(AuthContext);
 
   const submitItem = async () => {
@@ -30,6 +30,14 @@ const Add = ({setPage}) => {
       .update({
         bucketlist: [...bucketListCopy, bucketListItem],
       });
+    const newUsers = users.map((firestoreUser) => {
+      if (firestoreUser.email === user.email) {
+        firestoreUser.bucketlist = [...bucketListCopy, bucketListItem];
+      }
+      return firestoreUser;
+    });
+
+    setUsers(newUsers);
   };
 
   //STYLES
@@ -47,6 +55,7 @@ const Add = ({setPage}) => {
     width: '50%',
     marginBottom: 20,
     fontSize: 20,
+    backgroundColor: 'white',
   };
 
   const textStyle = {
@@ -80,6 +89,7 @@ const Add = ({setPage}) => {
         />
         <Text style={textStyle}>Image URL</Text>
         <TextInput
+          textContentType="URL"
           onChangeText={(e) => {
             setImage(e);
             console.log('image:', image);
@@ -88,7 +98,7 @@ const Add = ({setPage}) => {
         />
         <Text style={textStyle}>Description</Text>
         <TextInput
-          multiline="true"
+          multiline={true}
           numberOfLines="4"
           onChangeText={(e) => {
             setDescription(e);
@@ -101,6 +111,7 @@ const Add = ({setPage}) => {
             width: '60%',
             marginBottom: 20,
             fontSize: 16,
+            backgroundColor: 'white',
           }}
         />
         <Button

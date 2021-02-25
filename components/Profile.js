@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {Text, View, Image, Button} from 'react-native';
 import {AuthContext, UsersContext} from '../context';
 
@@ -6,9 +6,16 @@ const Profile = () => {
   const {user} = useContext(AuthContext);
   const {users} = useContext(UsersContext);
   const currentUser = user._user;
+  const [firestoreUser, setFirestoreUser] = useState({bucketlist: []});
 
-  const firestoreUser = users.find((x) => x.email === user.email);
-  console.log(firestoreUser.bucketlist.length);
+  useEffect(() => {
+    const tempUser = users.find((x) => x.email === user.email);
+    if (tempUser) {
+      setFirestoreUser(tempUser);
+    }
+  }, [users, user.email]);
+
+  console.log(firestoreUser);
 
   const divStyle = {
     backgroundColor: 'white',
