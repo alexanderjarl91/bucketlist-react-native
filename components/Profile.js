@@ -1,21 +1,9 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {Text, View, Image, Button} from 'react-native';
-import {AuthContext, UsersContext} from '../context';
+import {AuthContext} from '../context';
 
 const Profile = () => {
-  const {user} = useContext(AuthContext);
-  const {users} = useContext(UsersContext);
-  const currentUser = user._user;
-  const [firestoreUser, setFirestoreUser] = useState({bucketlist: []});
-
-  useEffect(() => {
-    const tempUser = users.find((x) => x.email === user.email);
-    if (tempUser) {
-      setFirestoreUser(tempUser);
-    }
-  }, [users, user.email]);
-
-  console.log(firestoreUser);
+  const {userData} = useContext(AuthContext);
 
   const divStyle = {
     backgroundColor: 'white',
@@ -48,14 +36,19 @@ const Profile = () => {
     fontSize: 16,
     marginLeft: 4,
   };
+
+  if (!userData) {
+    return <View></View>;
+  }
+
   return (
     <View style={divStyle}>
-      <Image style={profileImage} source={{uri: currentUser.photoURL}} />
-      <Text style={profileName}>{currentUser.displayName}</Text>
-      <Text style={profileEmail}>{currentUser.email}</Text>
+      <Image style={profileImage} source={{uri: userData.photoURL}} />
+      <Text style={profileName}>{userData.displayName}</Text>
+      <Text style={profileEmail}>{userData.email}</Text>
       <View style={{display: 'flex', flexDirection: 'row'}}>
         <Text style={profileEmail}>Bucketlist Items:</Text>
-        <Text style={totalItems}>{firestoreUser.bucketlist.length}</Text>
+        <Text style={totalItems}>{userData.bucketlist.length}</Text>
       </View>
 
       <Button title="Log out" />

@@ -7,7 +7,6 @@ import Add from './components/Add.js';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Login from './components/Login';
-import {UsersProvider} from './context';
 import {AuthContext} from './context';
 
 const App = () => {
@@ -20,15 +19,13 @@ const App = () => {
 
   //CONTEXT DECLARATIONS
   const {
-    user,
+    userData,
     name,
     email,
     password,
     setName,
     setEmail,
     setPassword,
-    handleLogin,
-    handleLogout,
     handleSignup,
   } = useContext(AuthContext);
 
@@ -75,8 +72,8 @@ const App = () => {
   });
 
   return (
-    <UsersProvider>
-      {user ? (
+    <>
+      {userData ? (
         <View
           style={{
             flex: 1,
@@ -103,6 +100,7 @@ const App = () => {
               <Menu
                 modalVisible={modalVisible}
                 setModalVisible={setModalVisible}
+                setPage={setPage}
               />
             </View>
           </Modal>
@@ -125,7 +123,7 @@ const App = () => {
           handleSignup={handleSignup}
         />
       )}
-    </UsersProvider>
+    </>
   );
 };
 export default App;

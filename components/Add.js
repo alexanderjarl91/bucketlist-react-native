@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
 import {Text, View, TextInput, Button} from 'react-native';
-import {AuthContext, UsersContext} from '../context';
+import {AuthContext} from '../context';
 import firestore from '@react-native-firebase/firestore';
 
 const Add = ({setPage}) => {
@@ -10,10 +10,10 @@ const Add = ({setPage}) => {
   const [deadline, setDeadline] = useState('deadline');
   const [image, setImage] = useState('image');
 
-  const {users, setUsers} = useContext(UsersContext);
-  const {user} = useContext(AuthContext);
+  const {userData, refreshUserData} = useContext(AuthContext);
 
   const submitItem = async () => {
+    //new item defined
     const bucketListItem = {
       title: title,
       description: description,
@@ -21,23 +21,25 @@ const Add = ({setPage}) => {
       image: image,
     };
 
-    const data = await firestore().collection('users').doc(user.email).get();
+    //users data retrieved
+    const data = await firestore()
+      .collection('users')
+      .doc(userData.email)
+      .get();
+
+    //users bucketlist array copied
     const bucketListCopy = data._data.bucketlist;
 
+    //updated database with the old bucketlist plus the new item
     firestore()
       .collection('users')
-      .doc(user.email)
+      .doc(userData.email)
       .update({
         bucketlist: [...bucketListCopy, bucketListItem],
       });
-    const newUsers = users.map((firestoreUser) => {
-      if (firestoreUser.email === user.email) {
-        firestoreUser.bucketlist = [...bucketListCopy, bucketListItem];
-      }
-      return firestoreUser;
-    });
 
-    setUsers(newUsers);
+    //refreshing userData to rerender
+    refreshUserData();
   };
 
   //STYLES
@@ -99,7 +101,7 @@ const Add = ({setPage}) => {
         <Text style={textStyle}>Description</Text>
         <TextInput
           multiline={true}
-          numberOfLines="4"
+          numberOfLines={4}
           onChangeText={(e) => {
             setDescription(e);
             console.log('description:', description);

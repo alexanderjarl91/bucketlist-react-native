@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* FirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FirstAppTests.m */; };
+		00E356F31AD99517003FC87E /* BucketlistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BucketlistTests.m */; };
 		0825E6C225D9C04D009CB410 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0825E6C125D9C04D009CB410 /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,12 +15,12 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* FirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FirstAppTests.m */; };
-		4D7F1E15FE0EA26DC020F6D9 /* libPods-FirstApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6533455381CCDB49A821B61 /* libPods-FirstApp-tvOSTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* BucketlistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BucketlistTests.m */; };
+		4D7F1E15FE0EA26DC020F6D9 /* libPods-Bucketlist-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6533455381CCDB49A821B61 /* libPods-Bucketlist-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8244E34A6B6AC4ECC85B4D2B /* libPods-FirstApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BFE7430FE0A4B5657E66AD /* libPods-FirstApp-tvOS.a */; };
-		C6C827F04F8C06D0380B8ECF /* libPods-FirstApp-FirstAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340611109F450D13A05C9FF5 /* libPods-FirstApp-FirstAppTests.a */; };
-		F1123D777B17AB15392D733C /* libPods-FirstApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C19714720DB57C907F5BD2 /* libPods-FirstApp.a */; };
+		8244E34A6B6AC4ECC85B4D2B /* libPods-Bucketlist-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BFE7430FE0A4B5657E66AD /* libPods-Bucketlist-tvOS.a */; };
+		C6C827F04F8C06D0380B8ECF /* libPods-Bucketlist-BucketlistTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340611109F450D13A05C9FF5 /* libPods-Bucketlist-BucketlistTests.a */; };
+		F1123D777B17AB15392D733C /* libPods-Bucketlist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C19714720DB57C907F5BD2 /* libPods-Bucketlist.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,44 +29,44 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = FirstApp;
+			remoteInfo = Bucketlist;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "FirstApp-tvOS";
+			remoteInfo = "Bucketlist-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* FirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* BucketlistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketlistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FirstAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstAppTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* BucketlistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BucketlistTests.m; sourceTree = "<group>"; };
 		0825E6C125D9C04D009CB410 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FirstApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FirstApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FirstApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FirstApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FirstApp/main.m; sourceTree = "<group>"; };
-		152D83B7E2ECAF0E724DE9A9 /* Pods-FirstApp-FirstAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-FirstAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* FirstApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirstApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* FirstApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FirstApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32EE0FB7B9BC3C784C445543 /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
-		340611109F450D13A05C9FF5 /* libPods-FirstApp-FirstAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp-FirstAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4705DE2574129D9C3053AE9E /* Pods-FirstApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOSTests/Pods-FirstApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		498BE97F44FB0EEC8D998F00 /* Pods-FirstApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOSTests/Pods-FirstApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		628042506847BEE2E6A7C303 /* Pods-FirstApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOS/Pods-FirstApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FirstApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9254430BF846D6E46CB289C1 /* Pods-FirstApp-FirstAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-FirstAppTests.release.xcconfig"; path = "Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		BFBA74BC6C5DCE5D0B2A53CB /* Pods-FirstApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOS/Pods-FirstApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		C6533455381CCDB49A821B61 /* libPods-FirstApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D59466FC799CF941CE3CA3A7 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
-		D8C19714720DB57C907F5BD2 /* libPods-FirstApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8BFE7430FE0A4B5657E66AD /* libPods-FirstApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Bucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Bucketlist/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Bucketlist/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bucketlist/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Bucketlist/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Bucketlist/main.m; sourceTree = "<group>"; };
+		152D83B7E2ECAF0E724DE9A9 /* Pods-Bucketlist-BucketlistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-BucketlistTests.debug.xcconfig"; path = "Target Support Files/Pods-Bucketlist-BucketlistTests/Pods-Bucketlist-BucketlistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Bucketlist-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucketlist-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Bucketlist-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bucketlist-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32EE0FB7B9BC3C784C445543 /* Pods-Bucketlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist.debug.xcconfig"; path = "Target Support Files/Pods-Bucketlist/Pods-Bucketlist.debug.xcconfig"; sourceTree = "<group>"; };
+		340611109F450D13A05C9FF5 /* libPods-Bucketlist-BucketlistTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bucketlist-BucketlistTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4705DE2574129D9C3053AE9E /* Pods-Bucketlist-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Bucketlist-tvOSTests/Pods-Bucketlist-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		498BE97F44FB0EEC8D998F00 /* Pods-Bucketlist-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Bucketlist-tvOSTests/Pods-Bucketlist-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		628042506847BEE2E6A7C303 /* Pods-Bucketlist-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Bucketlist-tvOS/Pods-Bucketlist-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Bucketlist/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9254430BF846D6E46CB289C1 /* Pods-Bucketlist-BucketlistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-BucketlistTests.release.xcconfig"; path = "Target Support Files/Pods-Bucketlist-BucketlistTests/Pods-Bucketlist-BucketlistTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFBA74BC6C5DCE5D0B2A53CB /* Pods-Bucketlist-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Bucketlist-tvOS/Pods-Bucketlist-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C6533455381CCDB49A821B61 /* libPods-Bucketlist-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bucketlist-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59466FC799CF941CE3CA3A7 /* Pods-Bucketlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketlist.release.xcconfig"; path = "Target Support Files/Pods-Bucketlist/Pods-Bucketlist.release.xcconfig"; sourceTree = "<group>"; };
+		D8C19714720DB57C907F5BD2 /* libPods-Bucketlist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bucketlist.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BFE7430FE0A4B5657E66AD /* libPods-Bucketlist-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bucketlist-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C827F04F8C06D0380B8ECF /* libPods-FirstApp-FirstAppTests.a in Frameworks */,
+				C6C827F04F8C06D0380B8ECF /* libPods-Bucketlist-BucketlistTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1123D777B17AB15392D733C /* libPods-FirstApp.a in Frameworks */,
+				F1123D777B17AB15392D733C /* libPods-Bucketlist.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8244E34A6B6AC4ECC85B4D2B /* libPods-FirstApp-tvOS.a in Frameworks */,
+				8244E34A6B6AC4ECC85B4D2B /* libPods-Bucketlist-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,20 +100,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7F1E15FE0EA26DC020F6D9 /* libPods-FirstApp-tvOSTests.a in Frameworks */,
+				4D7F1E15FE0EA26DC020F6D9 /* libPods-Bucketlist-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* FirstAppTests */ = {
+		00E356EF1AD99517003FC87E /* BucketlistTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FirstAppTests.m */,
+				00E356F21AD99517003FC87E /* BucketlistTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FirstAppTests;
+			path = BucketlistTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -124,7 +124,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* FirstApp */ = {
+		13B07FAE1A68108700A75B9A /* Bucketlist */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -135,7 +135,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = FirstApp;
+			name = Bucketlist;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -143,10 +143,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				D8C19714720DB57C907F5BD2 /* libPods-FirstApp.a */,
-				340611109F450D13A05C9FF5 /* libPods-FirstApp-FirstAppTests.a */,
-				E8BFE7430FE0A4B5657E66AD /* libPods-FirstApp-tvOS.a */,
-				C6533455381CCDB49A821B61 /* libPods-FirstApp-tvOSTests.a */,
+				D8C19714720DB57C907F5BD2 /* libPods-Bucketlist.a */,
+				340611109F450D13A05C9FF5 /* libPods-Bucketlist-BucketlistTests.a */,
+				E8BFE7430FE0A4B5657E66AD /* libPods-Bucketlist-tvOS.a */,
+				C6533455381CCDB49A821B61 /* libPods-Bucketlist-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,14 +154,14 @@
 		6870ABA34B220BEC8303817B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32EE0FB7B9BC3C784C445543 /* Pods-FirstApp.debug.xcconfig */,
-				D59466FC799CF941CE3CA3A7 /* Pods-FirstApp.release.xcconfig */,
-				152D83B7E2ECAF0E724DE9A9 /* Pods-FirstApp-FirstAppTests.debug.xcconfig */,
-				9254430BF846D6E46CB289C1 /* Pods-FirstApp-FirstAppTests.release.xcconfig */,
-				628042506847BEE2E6A7C303 /* Pods-FirstApp-tvOS.debug.xcconfig */,
-				BFBA74BC6C5DCE5D0B2A53CB /* Pods-FirstApp-tvOS.release.xcconfig */,
-				498BE97F44FB0EEC8D998F00 /* Pods-FirstApp-tvOSTests.debug.xcconfig */,
-				4705DE2574129D9C3053AE9E /* Pods-FirstApp-tvOSTests.release.xcconfig */,
+				32EE0FB7B9BC3C784C445543 /* Pods-Bucketlist.debug.xcconfig */,
+				D59466FC799CF941CE3CA3A7 /* Pods-Bucketlist.release.xcconfig */,
+				152D83B7E2ECAF0E724DE9A9 /* Pods-Bucketlist-BucketlistTests.debug.xcconfig */,
+				9254430BF846D6E46CB289C1 /* Pods-Bucketlist-BucketlistTests.release.xcconfig */,
+				628042506847BEE2E6A7C303 /* Pods-Bucketlist-tvOS.debug.xcconfig */,
+				BFBA74BC6C5DCE5D0B2A53CB /* Pods-Bucketlist-tvOS.release.xcconfig */,
+				498BE97F44FB0EEC8D998F00 /* Pods-Bucketlist-tvOSTests.debug.xcconfig */,
+				4705DE2574129D9C3053AE9E /* Pods-Bucketlist-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				0825E6C125D9C04D009CB410 /* GoogleService-Info.plist */,
-				13B07FAE1A68108700A75B9A /* FirstApp */,
+				13B07FAE1A68108700A75B9A /* Bucketlist */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FirstAppTests */,
+				00E356EF1AD99517003FC87E /* BucketlistTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6870ABA34B220BEC8303817B /* Pods */,
@@ -192,10 +192,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* FirstApp.app */,
-				00E356EE1AD99517003FC87E /* FirstAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* FirstApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* FirstApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Bucketlist.app */,
+				00E356EE1AD99517003FC87E /* BucketlistTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Bucketlist-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Bucketlist-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* FirstAppTests */ = {
+		00E356ED1AD99517003FC87E /* BucketlistTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FirstAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BucketlistTests" */;
 			buildPhases = (
 				132197E6D8BF5F04AAA2F1E0 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -218,14 +218,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = FirstAppTests;
-			productName = FirstAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* FirstAppTests.xctest */;
+			name = BucketlistTests;
+			productName = BucketlistTests;
+			productReference = 00E356EE1AD99517003FC87E /* BucketlistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* FirstApp */ = {
+		13B07F861A680F5B00A75B9A /* Bucketlist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FirstApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bucketlist" */;
 			buildPhases = (
 				3425E842D2CB08492F288014 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -240,14 +240,14 @@
 			);
 			dependencies = (
 			);
-			name = FirstApp;
-			productName = FirstApp;
-			productReference = 13B07F961A680F5B00A75B9A /* FirstApp.app */;
+			name = Bucketlist;
+			productName = Bucketlist;
+			productReference = 13B07F961A680F5B00A75B9A /* Bucketlist.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* FirstApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Bucketlist-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FirstApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Bucketlist-tvOS" */;
 			buildPhases = (
 				C03A55B352CF90CCDD85974B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -260,14 +260,14 @@
 			);
 			dependencies = (
 			);
-			name = "FirstApp-tvOS";
-			productName = "FirstApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* FirstApp-tvOS.app */;
+			name = "Bucketlist-tvOS";
+			productName = "Bucketlist-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Bucketlist-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* FirstApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Bucketlist-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FirstApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Bucketlist-tvOSTests" */;
 			buildPhases = (
 				663D2966D5813BAC40E0092B /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -279,9 +279,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "FirstApp-tvOSTests";
-			productName = "FirstApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* FirstApp-tvOSTests.xctest */;
+			name = "Bucketlist-tvOSTests";
+			productName = "Bucketlist-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Bucketlist-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FirstApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bucketlist" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -323,10 +323,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* FirstApp */,
-				00E356ED1AD99517003FC87E /* FirstAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* FirstApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* FirstApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Bucketlist */,
+				00E356ED1AD99517003FC87E /* BucketlistTests */,
+				2D02E47A1E0B4A5D006451C7 /* Bucketlist-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Bucketlist-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -396,7 +396,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstApp-FirstAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bucketlist-BucketlistTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,7 +409,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstApp/Pods-FirstApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Bucketlist/Pods-Bucketlist-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
 			);
@@ -420,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstApp/Pods-FirstApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bucketlist/Pods-Bucketlist-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -452,7 +452,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bucketlist-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,7 +465,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Bucketlist-BucketlistTests/Pods-Bucketlist-BucketlistTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
 			);
@@ -476,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bucketlist-BucketlistTests/Pods-Bucketlist-BucketlistTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		663D2966D5813BAC40E0092B /* [CP] Check Pods Manifest.lock */ = {
@@ -494,7 +494,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstApp-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bucketlist-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -526,7 +526,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstApp-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bucketlist-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -578,7 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FirstAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* BucketlistTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* FirstAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* BucketlistTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,12 +613,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* FirstApp */;
+			target = 13B07F861A680F5B00A75B9A /* Bucketlist */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* FirstApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Bucketlist-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -626,14 +626,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 152D83B7E2ECAF0E724DE9A9 /* Pods-FirstApp-FirstAppTests.debug.xcconfig */;
+			baseConfigurationReference = 152D83B7E2ECAF0E724DE9A9 /* Pods-Bucketlist-BucketlistTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FirstAppTests/Info.plist;
+				INFOPLIST_FILE = BucketlistTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -643,17 +643,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstApp.app/FirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bucketlist.app/Bucketlist";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9254430BF846D6E46CB289C1 /* Pods-FirstApp-FirstAppTests.release.xcconfig */;
+			baseConfigurationReference = 9254430BF846D6E46CB289C1 /* Pods-Bucketlist-BucketlistTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = FirstAppTests/Info.plist;
+				INFOPLIST_FILE = BucketlistTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -663,19 +663,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstApp.app/FirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bucketlist.app/Bucketlist";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32EE0FB7B9BC3C784C445543 /* Pods-FirstApp.debug.xcconfig */;
+			baseConfigurationReference = 32EE0FB7B9BC3C784C445543 /* Pods-Bucketlist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = FirstApp/Info.plist;
+				INFOPLIST_FILE = Bucketlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -683,7 +683,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bucketlist;
-				PRODUCT_NAME = FirstApp;
+				PRODUCT_NAME = Bucketlist;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -692,12 +692,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D59466FC799CF941CE3CA3A7 /* Pods-FirstApp.release.xcconfig */;
+			baseConfigurationReference = D59466FC799CF941CE3CA3A7 /* Pods-Bucketlist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = FirstApp/Info.plist;
+				INFOPLIST_FILE = Bucketlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -705,7 +705,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bucketlist;
-				PRODUCT_NAME = FirstApp;
+				PRODUCT_NAME = Bucketlist;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -713,7 +713,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628042506847BEE2E6A7C303 /* Pods-FirstApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 628042506847BEE2E6A7C303 /* Pods-Bucketlist-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -724,14 +724,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FirstApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Bucketlist-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FirstApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Bucketlist-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -741,7 +741,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBA74BC6C5DCE5D0B2A53CB /* Pods-FirstApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = BFBA74BC6C5DCE5D0B2A53CB /* Pods-Bucketlist-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -752,14 +752,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FirstApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "Bucketlist-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FirstApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Bucketlist-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -769,7 +769,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 498BE97F44FB0EEC8D998F00 /* Pods-FirstApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 498BE97F44FB0EEC8D998F00 /* Pods-Bucketlist-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -779,24 +779,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FirstApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Bucketlist-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FirstApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Bucketlist-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstApp-tvOS.app/FirstApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bucketlist-tvOS.app/Bucketlist-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4705DE2574129D9C3053AE9E /* Pods-FirstApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 4705DE2574129D9C3053AE9E /* Pods-Bucketlist-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -806,17 +806,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FirstApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Bucketlist-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FirstApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Bucketlist-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstApp-tvOS.app/FirstApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bucketlist-tvOS.app/Bucketlist-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -937,7 +937,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FirstAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BucketlistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FirstApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Bucketlist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FirstApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Bucketlist-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -964,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FirstApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Bucketlist-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -973,7 +973,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FirstApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Bucketlist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
