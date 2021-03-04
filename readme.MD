@@ -12,7 +12,7 @@ So the previous reviewer had a hard time getting the application up and running.
 
  **Assuming you have Xcode:**
 * run `npm i` to install all dependencies
-* run `npm react-native start` to start the app
+* run `npm start` to start the app
 * run `npm react-native run-ios` to start the simulator
 
 **In the likely event you don't get the app running:**
