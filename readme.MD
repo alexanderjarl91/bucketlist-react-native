@@ -1,6 +1,6 @@
 # Bucketlist for iOS (stopped developing)
 
-A way to store your bucketlist digitally (glorified to-do list, I guess). I fell out of love with this project very early.
+A way to store your bucketlist digitally.
 
 Built with React Native (create-react-native-app) and Firebase.
 
