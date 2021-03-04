@@ -16,7 +16,7 @@ So the previous reviewer had a hard time getting the application up and running.
 * run `npx react-native run-ios` to start the simulator (note that it's npx on this one
 
 **In the likely event you don't get the app running:**
-Heres a screencast of me using it. I recommend looking at context.js for reviewing as this is where the juicy stuff is handled.
+Heres a screencast of me using it. I recommend looking at context.js for reviewing as this is where the juicy stuff is handled. https://streamable.com/bbkfv5
 
 
 
